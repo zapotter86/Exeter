@@ -123,33 +123,33 @@ b,b,b,b,b,b,b,b,
 ]
 
 while True: 
-    Button3.wait_for_press()
-    random_number = random.randint(1,10)
-    if random_number == (1):
-        sense.set_pixels(one)
-    elif random_number == (2):
-        sense.set_pixels(two)
-    elif random_number == (3):
-        sense.set_pixels(three)
-    elif random_number == (4):
-        sense.set_pixels(four)
-    elif random_number == (5):
-        sense.set_pixels(five)
-    elif random_number == (6):
-        sense.set_pixels(six)
-    elif random_number == (7):
-        sense.set_pixels(seven)
-    elif random_number == (8):
-        sense.set_pixels(eight)
-    elif random_number == (9):
-        sense.set_pixels(nine)
-    elif random_number == (10):
-        sense.set_pixels(ten)
+    if Button3.is_pressed()
+               random_number = random.randint(1,10)
+               if random_number == (1):
+                   sense.set_pixels(one)
+               elif random_number == (2):
+                   sense.set_pixels(two)
+               elif random_number == (3):
+                   sense.set_pixels(three)
+               elif random_number == (4):
+                   sense.set_pixels(four)
+               elif random_number == (5):
+                   sense.set_pixels(five)
+               elif random_number == (6):
+                   sense.set_pixels(six)
+               elif random_number == (7):
+                   sense.set_pixels(seven)
+               elif random_number == (8):
+                   sense.set_pixels(eight)
+               elif random_number == (9):
+                   sense.set_pixels(nine)
+               elif random_number == (10):
+                   sense.set_pixels(ten)
        
 
-    #elif Button1.is_pressed:
-            #print("Player 1 wins!")
+    if Button1.is_pressed:
+           print("Player 1 wins!")
             
-    #elif Button2.is_pressed:
-           # print("Player 2 wins!")    
+    if Button2.is_pressed:
+           print("Player 2 wins!")    
             
